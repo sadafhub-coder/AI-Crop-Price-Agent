@@ -1,0 +1,43 @@
+# --- Secrets: never commit the real .env ---
+.env
+.env.local
+*.key
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.Python
+
+# --- Virtual environments ---
+venv/
+.venv/
+env/
+ENV/
+
+# --- Testing / tooling caches ---
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# --- Trained model artefacts (regenerate with: python -m models.train_model) ---
+models/saved_models/*.joblib
+models/saved_models/metrics.json
+
+# --- Generated data (regenerate with: python tools/data_loader.py) ---
+data/crop_prices.db
+
+# --- Streamlit ---
+.streamlit/secrets.toml
+
+# --- OS / editors ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
