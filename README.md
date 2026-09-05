@@ -1,4 +1,5 @@
 # 🌾 AI Crop Price Prediction & Market Insight Chatbot
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://cropagent.streamlit.app/)
 
 A production-ready, multi-agent chatbot that answers real questions about Indian mandi
 (agricultural market) prices — current rates, historical trends, ML price forecasts, market
