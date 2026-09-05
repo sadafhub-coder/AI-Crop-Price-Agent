@@ -1,0 +1,34 @@
+{
+  "model_path": "C:\\Users\\admin\\Downloads\\AI-Crop-Price-Agent\\models\\saved_models\\crop_price_model.joblib",
+  "metrics": {
+    "train": {
+      "mae": 22.26,
+      "rmse": 36.3,
+      "r2": 0.9997,
+      "mape": 0.84,
+      "n": 17126
+    },
+    "test": {
+      "mae": 48.95,
+      "rmse": 72.26,
+      "r2": 0.9989,
+      "mape": 1.64,
+      "n": 4362
+    }
+  },
+  "trained_at": "2026-09-05T13:29:39",
+  "train_cutoff": "2026-05-13",
+  "rows": 21488,
+  "top_features": {
+    "lag_1": 0.2042,
+    "roll_mean_7": 0.1835,
+    "lag_3": 0.1591,
+    "roll_mean_14": 0.1208,
+    "lag_7": 0.1033,
+    "roll_mean_30": 0.0948,
+    "lag_14": 0.0535,
+    "lag_30": 0.0453,
+    "crop_code": 0.0225,
+    "roll_std_7": 0.0086
+  }
+}

@@ -26,8 +26,8 @@ htmlcov/
 .ruff_cache/
 
 # --- Trained model artefacts (regenerate with: python -m models.train_model) ---
-models/saved_models/*.joblib
-models/saved_models/metrics.json
+#models/saved_models/*.joblib
+#models/saved_models/metrics.json
 
 # --- Generated data (regenerate with: python tools/data_loader.py) ---
 data/crop_prices.db
