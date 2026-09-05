@@ -26,7 +26,12 @@ if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
 import pandas as pd  # noqa: E402
+import os  # noqa: E402
 import streamlit as st  # noqa: E402
+# Transfer Streamlit Cloud secrets into os.environ for Gemini / tools
+for key in ["GEMINI_API_KEY", "GEMINI_MODEL", "GEMINI_TIMEOUT"]:
+    if key in st.secrets:
+        os.environ[key] = str(st.secrets[key])
 
 st.set_page_config(
     page_title="AI Crop Price & Market Insight Chatbot",
